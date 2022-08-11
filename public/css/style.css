@@ -1,0 +1,17 @@
+body{
+    font-family: 'Roboto';
+    background-color: #EAC926;;
+}
+.subtitulos{
+    font-size: 24px;
+}
+.precios{
+    font-size: 18px;
+}
+.tamDescYDescrip{
+    font-size: 16px;
+}
+i{
+ 
+    color: black;
+}
