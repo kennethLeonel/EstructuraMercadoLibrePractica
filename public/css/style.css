@@ -20,7 +20,7 @@ i{
     color: black;
 }
 .logoMercado{
-    width: 60%;
+    width: 50%;
 }
 
 .imagenes{
@@ -31,11 +31,14 @@ i{
 .lista1, .lista2{
     list-style: none;
     display: none;
+    text-decoration: none;
 }
-.lista2{
-    margin-top: 10px
+.lista1 li a , .lista2 li a{
+   color : #222222;
 }
-
+.lista2 li a i {
+    color : #1259c3;
+}
 .hamburguesa{
     text-align: center;  
 }
@@ -120,5 +123,32 @@ footer{
  
 }
 @media (min-width: 769px) {
- 
+    .logoMercado{
+        width: 35%;
+    }
+    .header-top-bar{
+        display : flex ;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+    .header-top-compra{
+        max-width: 350px;
+    }
+    .header-bottom-bar{
+        display : flex ;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+    .lista1, .lista2{
+        
+        display: flex;
+        justify-content: space-between;
+
+    }
+     .header-bottom-bar ul li{
+        margin: 0 15px;
+    }
+
 }
