@@ -1,7 +1,11 @@
 body{
     font-family: 'Roboto';
-    background-color: #EAC926;
+    
+   
   
+}
+header{
+    background-color: #EAC926;
 }
 .subtitulos{
     font-size: 24px;
@@ -11,6 +15,7 @@ body{
 }
 .tamDescYDescrip{
     font-size: 16px;
+    
 }
 i{
  
@@ -27,6 +32,7 @@ i{
 
 .lista1, .lista2{
     list-style: none;
+    display: none;
 }
 .lista2{
     margin-top: 10px
@@ -48,4 +54,51 @@ i{
     text-align: center;
     color: white;
     box-sizing: border-box;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+section{
+    margin-top: 10px;
+}
+.articulos{
+    margin-top: 10px;
+    background-color:#ebebeb;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.cajaPeque{
+    border-top: 1px solid #ebebeb;
+    padding:15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.descrip{
+    display: none;
+}
+.truck i{
+    color: green;
+}
+.banner-container img{
+    width: 100%;
+
+}
+@media (min-width: 361px) {
+    .descrip{
+        display: block;
+    }
+    .lista1, .lista2{
+        
+        display: block;
+    }
+    .articulos{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+ 
+}
+@media (min-width: 769px) {
+ 
 }
