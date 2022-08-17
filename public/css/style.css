@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Roboto';
     background-color: #EAC926;
@@ -24,8 +29,7 @@ i{
 }
 
 .imagenes{
-    width: 80%;
-    
+    width: 80%;   
 }
 
 .lista1, .lista2{
@@ -57,14 +61,19 @@ main{
     width: 90%;
     margin: 0 auto;
 }
+
 section{
     margin-top: 10px;
+   
 }
+
 .articulos{
     margin-top: 10px;
     background-color:#ebebeb;
     box-sizing: border-box;
     border-radius: 10px;
+   
+   
 }
 
 .cajaPeque{
@@ -76,8 +85,19 @@ section{
 .descrip{
     display: none;
 }
+
 .truck i{
     color: green;
+    font-size: 16px;
+    padding: 9px;
+    padding-top: 13px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    box-sizing: border-box;
+
 }
 .banner-container{
     margin-top: 10px;
@@ -106,6 +126,10 @@ footer{
 .contenedor-footer-iconos i{
     color: #1259c3; 
 }
+
+
+
+
 @media (min-width: 361px) {
     .descrip{
         display: block;
@@ -150,5 +174,20 @@ footer{
      .header-bottom-bar ul li{
         margin: 0 15px;
     }
+    .section-visita > .articulos,.section-ofertas > .articulos{
+        flex: 50%;
+    }
+    .section-visita,.section-ofertas{
+        display: flex;
+        flex-wrap: wrap;
 
+    }
+
+
+}
+@media (min-width: 1100px){
+
+    .section-visita > .articulos,.section-ofertas > .articulos{
+        flex: 1 0 21%;
+    }
 }
