@@ -127,8 +127,20 @@ footer{
     color: #1259c3; 
 }
 
-
-
+.detalleProducto{
+    display: flex;
+}
+.detalleProducto .precios{
+    flex-grow: 0.3;
+}
+.detalleProducto .descuento{
+    flex-grow: 0.7;
+   
+}
+.descuento{
+    color: #39b54a;
+  
+}
 
 @media (min-width: 361px) {
     .descrip{
@@ -175,11 +187,12 @@ footer{
         margin: 0 15px;
     }
     .section-visita > .articulos,.section-ofertas > .articulos{
-        flex: 50%;
+        flex: 40%;
     }
     .section-visita,.section-ofertas{
         display: flex;
         flex-wrap: wrap;
+        gap: 10px;
 
     }
 
@@ -189,5 +202,11 @@ footer{
 
     .section-visita > .articulos,.section-ofertas > .articulos{
         flex: 1 0 21%;
+    }
+    .section-visita,.section-ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
     }
 }
