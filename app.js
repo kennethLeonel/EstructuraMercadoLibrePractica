@@ -9,6 +9,11 @@ const path = require('path');
 app.get('/', (req,res)=>{
     res.sendFile(path.join(__dirname,'./views/home.html'));
 });
+
+app.post('/', (req,res)=>{
+    console.log("se realizó el registro");
+    res.sendFile(path.join(__dirname,'./views/home.html'));
+});
 app.get('/registro', (req,res)=>{
     res.sendFile(path.join(__dirname,'./views/registrar.html'));
 });
