@@ -9,7 +9,11 @@ body{
    
   
 }
-
+.search-input{
+    width: 320px;
+    padding: 10px;
+    border: 1px solid #CCC;
+}
 .subtitulos{
     font-size: 24px;
 }
@@ -150,6 +154,93 @@ footer{
     color: #39b54a;
   
 }
+
+/* Registrar usuario estilos */
+.titulo{
+    text-align: center;
+}
+.formu{
+    margin-top: 10px;
+  
+}
+.container-form-registro{
+    background-color: #ebebeb;
+    padding: 28px;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: #222222 0px 0px 10px;
+    border-radius: 20px;
+}
+.container-form-registro div{
+    margin-top: 20px;   
+}
+.container-form-registro  div .input-registro{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+}
+.botones-registo{
+    display: flex;
+    gap: 10px;
+    
+    justify-content: center;
+}
+.boton-registro{
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+    background-color: #1259c3;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.boton-registro:hover{
+    background-color: #2366ec;
+}
+
+/* Login */
+.formulario-login{
+    margin-top: 10px;
+}
+.container-form-login{
+    width: 50%;
+    margin: 0 auto;
+    padding: 28px;
+    box-shadow: #222222 0px 0px 10px;
+    border-radius: 20px;
+    background-color: #ebebeb;
+}
+.container-form-login div{
+    margin-top: 20px;   
+}
+.container-form-login  div .input-login{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+}
+
+
+.botones-login{
+    display: flex;
+    justify-content: center;
+}
+.boton-login{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+    background-color: #1259c3;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.boton-login:hover{
+    background-color: #2366ec;
+}
+
 
 @media (min-width: 361px) {
     .descrip{
