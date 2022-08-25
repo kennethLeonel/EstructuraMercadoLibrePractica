@@ -85,6 +85,7 @@ section{
     padding:15px;
     box-sizing: border-box;
     text-align: center;
+    transition: 2s all;
 }
 .descrip{
     display: none;
@@ -96,6 +97,7 @@ section{
     box-sizing: border-box;
     position: relative;
     top: -20px;
+    transition: 1s all;
    
    
 }
@@ -135,6 +137,7 @@ footer{
     padding:15px;
     box-sizing: border-box;
     text-align: center;
+    transition: 1s all;
 }
 .contenedor-footer-iconos i{
     color: #1259c3; 
@@ -236,9 +239,50 @@ footer{
     color: white;
     font-size: 16px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 .boton-login:hover{
-    background-color: #2366ec;
+    background-color: #0022AA;
+}
+
+
+#nombreProducto{
+    display: none;
+   
+}
+.articulos:hover #nombreProducto{
+    display: block;
+   
+}
+.articulos:hover {
+    
+    box-shadow: #222222 0px 0px 20px;
+    transform: scale(1.02);
+  
+}
+
+.articulos:hover .truck{
+    transform: scale(1.06) rotate(-90deg);
+
+
+}
+.articulos:hover .truck i{ 
+   color: #1259c3;
+   border-radius: 50%;
+   border: 1px solid #1259c3;
+
+
+}
+.articulos:hover .descuento{
+    color: #1259c3;
+}
+
+.contenedor-footer-hijo:hover {
+    transform: scale(1.08);
+}
+.contenedor-footer-hijo:hover .contenedor-footer-iconos i {
+    transform: scale(1.08);
+    color: #39b54a;
 }
 
 
@@ -252,6 +296,7 @@ footer{
     }
     .articulos{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: 2s all;
     }
     .hamburguesa{
         display: none;
@@ -312,5 +357,15 @@ footer{
     .truck{
         right: -90px;
         box-sizing: border-box;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-top: 1px solid #ebebeb;
+        margin-top: 20px;
+    }
+    .contenedor-footer-hijo{
+        border: none;
     }
 }
