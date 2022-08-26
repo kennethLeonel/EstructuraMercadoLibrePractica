@@ -2,6 +2,7 @@
 const express = require('express');
 const app = express();
 
+let puerto = process.env.PORT || 3000;
 app.use(express.static('public'));
 
 const path = require('path');
@@ -22,6 +23,6 @@ app.get('/login', (req,res)=>{
 });
 
 // Se levanta el servidor
-app.listen( 3000 , ()=>{
+app.listen( puerto , ()=>{
     console.log('Servidor levantado en el puerto 3000');
 });
